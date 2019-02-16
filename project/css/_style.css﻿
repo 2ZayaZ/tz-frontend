@@ -1,0 +1,87 @@
+header {
+  height: 60px;
+  padding: 50px 10px 50px 20px;
+}
+header > * {
+  display: inline-block;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  width: 380px;
+  float: left;
+}
+header .logo .logo-item-1 {
+  width: 79px;
+  height: 79px;
+  background: #39685a;
+  border-radius: 50%;
+  position: relative;
+  z-index: 4;
+}
+header .logo .logo-item-2 {
+  position: relative;
+  bottom: 10px;
+  right: 25px;
+  z-index: 5;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: left;
+}
+header .navigation {
+  float: right;
+}
+header .navigation nav {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+header .navigation nav a, header .navigation nav:visited {
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+header .navigation nav a:hover, header .navigation nav:visited:hover {
+  background: #39685a;
+}
+header .navigation nav a:hover:hover::after, header .navigation nav:visited:hover:hover::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  bottom: -50%;
+  margin-top: -13px;
+  display: block;
+  height: 0;
+  width: 0;
+  border: 12px solid transparent;
+  border-top: 12px solid #39685a;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.otf);
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  background: #444;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css%EF%BB%BF.map */
